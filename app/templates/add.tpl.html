@@ -1,0 +1,21 @@
+<h1 class="title">Add a New Contact</h1>
+
+<form name="new-contact" ng-submit="add.addContact(contact)">
+  <p class="control">
+    <input name="name" type="text" placeholder="Name"
+           ng-model="contact.name" />
+  </p>
+  <p class="control">
+    <input name="email" type="text" placeholder="email"
+           ng-model="contact.email" />
+  </p>
+  <p class="control">
+    <input name="phone" type="text" placeholder="phone #"
+           ng-model="contact.phone" />
+  </p>
+  <p class="control">
+    <input name="loc" type="text" placeholder="location"
+           ng-model="contact.loc" />
+  </p>
+  <button class="button is-primary">Add contact</button>
+</form>
