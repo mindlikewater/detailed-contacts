@@ -1,0 +1,36 @@
+@import "bulma";
+
+body {
+  margin: 25px;
+}
+//home view styling
+.table {
+  width: 250px;
+  height: 100px;
+  overflow: auto;
+}
+
+.rectangle figure {
+  display: flex;
+  justify-content: center;
+}
+
+.pic {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  overflow: auto;
+  border-radius: 100%;
+}
+
+.card-content {
+  background: #00d1b2;
+}
+
+.media-content {
+  text-align: center;
+}
+
+.content {
+  text-align: center;
+}
