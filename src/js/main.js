@@ -5,7 +5,7 @@ import { HomeController } from './controllers/home';
 import { AddController } from './controllers/add';
 import { SingleController } from './controllers/single';
 import { LayoutController } from './controllers/layout';
-import { ContactService } from './services/contact-server';
+import { ContactService } from './services/contact-service';
 
 import 'angular-ui-router';
 
