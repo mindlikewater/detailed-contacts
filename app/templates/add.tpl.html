@@ -1,9 +1,11 @@
-<h1 class="title">Add a New Contact</h1>
-
 <form name="new-contact" ng-submit="add.addContact(contact)">
   <p class="control">
     <input name="name" type="text" placeholder="Name"
            ng-model="contact.name" />
+  </p>
+  <p class="control">
+    <input name="userpic" type="text" placeholder="Your photo url"
+           ng-model="contact.url" />
   </p>
   <p class="control">
     <input name="email" type="text" placeholder="email"
