@@ -1,8 +1,14 @@
 @import "bulma";
 
-body {
+.container {
   margin: 25px;
 }
+
+//Centers title "My Peeps, Yo!"
+.nav-left {
+  margin-bottom: 1%;
+}
+
 //home view styling
 .table {
   width: 250px;
@@ -10,27 +16,39 @@ body {
   overflow: auto;
 }
 
+//used to center photo in single-contact view
 .rectangle figure {
   display: flex;
   justify-content: center;
+  position: relative;
+
+//shrinks the photo and makes it round
+  .pic {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    overflow: auto;
+    border-radius: 100%;
+  }
 }
 
-.pic {
-  display: flex;
-  width: 100px;
-  height: 100px;
-  overflow: auto;
-  border-radius: 100%;
+.arrow {
+  position: absolute;
+  top: 7%;
+  left: 3%;
 }
 
+//gives the contact info block some color
 .card-content {
   background: #00d1b2;
 }
 
+//centers contact name
 .media-content {
   text-align: center;
 }
 
+//centers contact details
 .content {
   text-align: center;
 }
