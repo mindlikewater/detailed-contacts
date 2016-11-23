@@ -4,7 +4,6 @@ function AddController ($state, ContactService) {
   this.addContact = addContact;
 
   function addContact (contact) {
-    console.log("Testing add controller");
     ContactService.addContact(contact).then((resp) => {
       $state.go('root.home');
     });
