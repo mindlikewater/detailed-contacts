@@ -1,10 +1,17 @@
-$scope.contacts = [];
+function HomeController (ContactService) {
+  let vm = this;
 
-function init () {
-  console.log("Starting home controller");
-  $http.get(SERVER).then((resp) => {
-  });
-}
+  vm.contacts = [];
+
+  function init () {
+    console.log("Testing home controller");
+    ContactService.allContacts().then((resp) => {
+      vm.contacts = resp.data;
+    });
+  }
+
+  init();
+};
 
 HomeController.$inject = ['ContactService'];
 export { HomeController };
