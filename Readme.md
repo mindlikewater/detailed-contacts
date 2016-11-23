@@ -1,55 +1,21 @@
-# Installation
+# Summary
 
-#### Prerequisites
+This project is a Contacts List built with AngularJS, utilizing MVC (Model-View-Controller) design.  It can be found live at: [Tai's Detailed Contacts](https://tiy-mikaelchen-detailed-contacts.surge.sh).
 
-Make sure you have an up to date installation of `npm`
-with `brew update` followed by either `brew install npm` or `brew upgrade npm`.
+# Learning Objectives
 
-Then use npm to install the following apps with `npm install -g $APP_NAME`
-* `gulp-cli`
-* `surge`
-
-Finally, I would strongly encourage you to install the `newapp` script from [here][newapp].
-
-[newapp]: https://gist.github.com/kingcons/a25733c233faf10847cbb4ff557e6843
-
-# Usage
-
-#### If you are using the `newapp` tool
-
-*NOTE:* If you do not use a lowercased project/folder name, the automatic deploy to surge with `npm run deploy` will fail as surge.sh always expects lowercased names.
-
-1. Run `$ newapp template <project name>`
-2. Change in to your new project
-3. Initialize Git `$ git init`
-4. Build
-
-#### If you are NOT using the `newapp` tool
-
-1. Clone down this repo
-2. Rename and change into the project folder
-3. Remove `git` from it `$ rm -rf .git`
-4. Initialize Git `$ git init`
-5. Install the dependencies `$ npm install`
-6. Build 
-
+- Demonstrate an understanding of AngularJS Controllers, Models & ViewModels
+- Use ControllerAs Syntax
+- Understand how to create and use AngularJS Services to handle $http requests
+- Implement UI-Router
 
 # Features
 
-This template features a couple different tools. First it utalizes both NPM and Gulp for different tasks.
+The home screen is a list view of all contacts.  By clicking on the title, "My Peeps, Yo!" you can always find your way back home.  Clicking the "Add Contact" link will take you to a form for adding new contacts.  Once a new contact is created, the page automatically takes you back to the home screen.  By clicking on any individual's name, you are taken to an individual contact page.  Each page contains the following information:
+  * Contact image
+  * Contact name
+  * Email
+  * Phone number
+  * Location
 
-## Gulp Tasks
-
-All tasks are listed below, but ideally you will just need to run `gulp start` and be done with it.
-
-- `gulp start`: This is the primary task that will fire up the server and allow you to start building
-- `gulp server`: This will start a Browsersync server with live-reload
-- `gulp sass`: This will compile your SASS
-- `gulp browserify`: This will transpile your JS from ES6 to ES5
-- `gulp watch`: This will start a watcher for files
-
-## NPM Scripts
-
-- `npm run test`: This will launch Mocha in your terminal and run any tests
-- `npm run deploy`: This will deploy your application to Surge.sh for you
-- `npm run lint`: This will run ESLint on your `/src/js` folder
+From the individual contact page, there are 2 ways to get back to the home screen--either click on the arrow in the top left corner or click on the page title.
