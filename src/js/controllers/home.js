@@ -4,7 +4,6 @@ function HomeController (ContactService) {
   vm.contacts = [];
 
   function init () {
-    console.log("Testing home controller");
     ContactService.allContacts().then((resp) => {
       vm.contacts = resp.data;
     });
