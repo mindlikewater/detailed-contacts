@@ -1,6 +1,6 @@
 import { SERVER } from "../server";
 
-function GifService ($http) {
+function ContactService ($http) {
   this.allContacts = function () {
     return $http.get(SERVER);
   };
